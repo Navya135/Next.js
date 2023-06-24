@@ -41,17 +41,12 @@ export default function HomePage({updateData}) {
           }
           return result;
         }, {});
-      
       const uniqueArray = Object.values(combinedArray);
-      
-      console.log(uniqueArray);
       setItems(uniqueArray)
       setSelectedMeals(uniqueArray)
       const menuItems = [...new Set(combinedArray1.map((Val) => Val.category))];
       setMenuItems(menuItems)
       }, []);
-
-
 
       const updateRankedUsers = (newItem) => {
         let filteredArr = Items.filter((o1) => {
@@ -125,7 +120,7 @@ export default function HomePage({updateData}) {
          }
       };
     
-      console.log(checkBoxes)
+      
   return (
     <>
     <div style={rowStyle}>
