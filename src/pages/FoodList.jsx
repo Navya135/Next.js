@@ -95,7 +95,6 @@ export default function HomePage({updateData}) {
             const newItem = totalItems.filter((newVal) => {
                 return newVal.category === newArr[0]; 
               });
-              console.log(newItem)
               updateMeals(newItem);
       };
 
